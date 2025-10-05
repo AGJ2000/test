@@ -22,4 +22,4 @@ jobs:
            TEST_BUILD_CONFIG: Release
         run: dotnet test Chirp.sln --configuration Release --no-build --collect "XPlat Code Coverage" --verbosity normal
       - name: Verify code format
-        run: dotnet format --verify-no-changes || (echo "::error::Run 'dotnet format' locally." && exit 1)
+        run: dotnet format Chirp.sln --verify-no-changes || (echo "::error::Run 'dotnet format' locally." && exit 1)
