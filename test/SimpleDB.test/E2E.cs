@@ -10,7 +10,7 @@ using Xunit;
 public class E2E
 {
     string DotnetExe => "dotnet";
-    string CliProject => Path.GetFullPath(Path.Combine("..","..","..","..","src","Chirp.CLI","Chirp.CLI.csproj"));
+    string CliProject => Path.GetFullPath(Path.Combine("..","..","..","..","src","Chirp.CLI.Client","Chirp.CLI.Client.csproj"));
 
     [Fact]
     public void Cheep_appends_and_read_shows_it()
@@ -33,6 +33,7 @@ public class E2E
         using var dir = new TempDir();
         var db = Path.Combine(dir.Path, "chirp_cli_db.csv");
         File.WriteAllText(db, string.Join(Environment.NewLine, new[]{
+            "Author,Timestamp,Message",
             "\"ropf\",\"1690898960\",\"Hello, BDSA students!\"",
             "\"rnie\",\"1690982378\",\"Welcome to the course!\"",
             "\"rnie\",\"1690983458\",\"I hope you had a good summer.\"",
