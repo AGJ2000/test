@@ -1,7 +1,9 @@
 using System;
 using FluentAssertions;
 using Xunit;
-public class TimeFormattingTests {
+namespace Chirp.CLI.Client.test;
+public class TimeFormattingTests
+{
     [Theory]
     [InlineData(1690898960, "08/01/23 14:09:20")] // Test with UTC timezone
     public void Formats_like_required(long unix, string expected)

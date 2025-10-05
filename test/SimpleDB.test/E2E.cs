@@ -3,6 +3,7 @@ using System.Diagnostics;
 using System.IO;
 using System.Linq;
 using Xunit;
+namespace SimpleDB.test;
 public sealed class End2End
 {
     // Brug samme build-config som CI. Lokalt falder den tilbage til Debug.
