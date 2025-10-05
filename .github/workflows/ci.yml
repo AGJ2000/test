@@ -14,10 +14,10 @@ jobs:
         with:
           dotnet-version: 8.0.x
       - name: Restore
-        run: dotnet restore
+        run: dotnet restore Chrip.sln
       - name: Build
-        run: dotnet build --configuration Release --no-restore
+        run: dotnet build Chirp.sln --configuration Release --no-restore
       - name: Test
-        run: dotnet test --configuration Release --no-build --collect "XPlat Code Coverage" --verbosity normal
+        run: dotnet test Chirp.sln --configuration Release --no-build --collect "XPlat Code Coverage" --verbosity normal
       - name: Verify code format
         run: dotnet format --verify-no-changes || (echo "::error::Run 'dotnet format' locally." && exit 1)
