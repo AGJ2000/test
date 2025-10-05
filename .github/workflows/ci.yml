@@ -14,7 +14,7 @@ jobs:
         with:
           dotnet-version: 8.0.x
       - name: Restore
-        run: dotnet restore Chrip.sln
+        run: dotnet restore Chirp.sln
       - name: Build
         run: dotnet build Chirp.sln --configuration Release --no-restore
       - name: Test
