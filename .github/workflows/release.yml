@@ -1,0 +1,42 @@
+name: release
+on:
+  push:
+    tags:
+      - "v*"
+
+permissions:
+  contents: write   # Husk at slå "Read and write permissions" til i repo Settings → Actions
+
+jobs:
+  build-release:
+    runs-on: ubuntu-latest
+    env:
+      DOTNET_CLI_TELEMETRY_OPTOUT: "true"
+      CONFIG: Release
+      PROJECT: src/Chirp.CLI/Chirp.CLI.csproj
+      APPNAME: chirp
+    steps:
+      - uses: actions/checkout@v4
+      - name: Setup .NET 8
+        uses: actions/setup-dotnet@v4
+        with:
+          dotnet-version: 8.0.x
+      - name: Restore
+        run: dotnet restore
+      - name: Build + Test
+        run: |
+          dotnet build --configuration $CONFIG --no-restore
+          dotnet test  --configuration $CONFIG --no-build
+      - name: Publish all targets (single-file, framework-dependent)
+        run: |
+          mkdir -p artifacts
+          for RID in win-x64 osx-x64 linux-x64; do
+            out="artifacts/${{ env.APPNAME }}-$RID"
+            dotnet publish "$PROJECT" -c $CONFIG -r $RID \
+              -p:PublishSingleFile=true -p:SelfContained=false --no-build -o "$out"
+            (cd artifacts && zip -r "${{ env.APPNAME }}-$RID.zip" "${{ env.APPNAME }}-$RID")
+          done
+      - name: Create GitHub Release
+        uses: softprops/action-gh-release@v2
+        with:
+          files: artifacts/*.zip
