@@ -18,4 +18,4 @@
 /Users/andersgrangaard/Chirp.CLI/src/Chirp.CLI.Client/obj/Debug/net8.0/Chirp.CLI.client.pdb
 /Users/andersgrangaard/Chirp.CLI/src/Chirp.CLI.Client/obj/Debug/net8.0/Chirp.CLI.client.genruntimeconfig.cache
 /Users/andersgrangaard/Chirp.CLI/src/Chirp.CLI.Client/obj/Debug/net8.0/ref/Chirp.CLI.client.dll
-/Users/andersgrangaard/Chirp.CLI/src/Chirp.CLI.Client/obj/Debug/net8.0/Chirp.CL.B59E0514.Up2Date
+/Users/andersgrangaard/Chirp.CLI/src/Chirp.CLI.Client/obj/Debug/net8.0/Chirp.CL.A9F3F8B4.Up2Date
