@@ -5,7 +5,7 @@ namespace Chirp.CLI.Client;
 
 public static class UserInterface
 {
-    private static string DisplayFormat = "MM/dd/yy HH:mm:ss";
+    private static readonly string DisplayFormat = "MM/dd/yy HH:mm:ss";
     public static void ReadCheep(Cheep cheep)
     {
         DateTimeOffset dto = DateTimeOffset.FromUnixTimeSeconds(cheep.Timestamp);

@@ -2,6 +2,7 @@ using System;
 using System.Diagnostics;
 using System.IO;
 using System.Linq;
+
 using Xunit;
 
 public sealed class End2End
@@ -24,6 +25,8 @@ public sealed class End2End
     private static string CliProjectPath =>
         Path.Combine(SolutionRoot(), "src", "Chirp.CLI.Client", "Chirp.CLI.Client.csproj");
 
+    private static readonly string[] separator = new[] { "\r\n", "\n" };
+
     // Helper til at køre CLI'en via dotnet run
     private static int RunCli(string appArgs, string workDir, out string stdout, out string stderr, bool noBuild = true)
     {
@@ -34,7 +37,7 @@ public sealed class End2End
         {
             WorkingDirectory = workDir,
             RedirectStandardOutput = true,
-            RedirectStandardError  = true
+            RedirectStandardError = true
         };
 
         using var p = Process.Start(psi)!;
@@ -54,7 +57,7 @@ public sealed class End2End
         if (exit != 0) throw new Exception($"CLI failed (exit {exit}):\n{err}");
 
         // Vi tester robust: forfatter + besked, ikke tidszone-afhængig tidstreng
-        var lines = output.Split(new[] { "\r\n", "\n" }, StringSplitOptions.RemoveEmptyEntries);
+        var lines = output.Split(separator, StringSplitOptions.RemoveEmptyEntries);
 
         Assert.Contains(lines, l => l.Contains("ropf @ ") && l.EndsWith(": Hello, BDSA students!"));
         Assert.Contains(lines, l => l.Contains("rnie @ ") && l.EndsWith(": Welcome to the course!"));

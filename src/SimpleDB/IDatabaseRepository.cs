@@ -1,9 +1,10 @@
-﻿using System.Collections.Generic;
-using CsvHelper;
-using CsvHelper.Configuration;
+using System.Collections.Generic;
 using System.Globalization;
 using System.IO;
 using System.Linq;
+
+using CsvHelper;
+using CsvHelper.Configuration;
 
 namespace SimpleDB;
 
@@ -31,7 +32,7 @@ public sealed class CSVDatabase<T> : IDatabaseRepository<T>
     {
         if (!File.Exists(_filePath))
         {
-            return Enumerable.Empty<T>();
+            return [];
         }
 
         using var reader = new StreamReader(_filePath);

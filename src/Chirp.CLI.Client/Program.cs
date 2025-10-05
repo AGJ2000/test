@@ -1,4 +1,5 @@
 using CommandLine;
+
 using SimpleDB;
 
 namespace Chirp.CLI.Client;
@@ -7,7 +8,7 @@ public record Cheep(string Author, string Message, long Timestamp);
 internal static class Program
 {
     private static readonly string DbFile = Path.Combine(Environment.CurrentDirectory, "chirp_cli_db.csv");
-    private static readonly CSVDatabase<Cheep> db = new CSVDatabase<Cheep>(DbFile);
+    private static readonly CSVDatabase<Cheep> db = new(DbFile);
 
     static int Main(string[] args)
     {
@@ -33,7 +34,7 @@ internal static class Program
     [Verb("read", HelpText = "Read all cheeps.")]
     public class Read
     {
-    
+
     }
 
     [Verb("cheep", HelpText = "make a new cheep.")]
