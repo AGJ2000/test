@@ -25,7 +25,7 @@ public sealed class End2End
     private static string CliProjectPath =>
         Path.Combine(SolutionRoot(), "src", "Chirp.CLI.Client", "Chirp.CLI.Client.csproj");
 
-    private static readonly string[] separator = new[] { "\r\n", "\n" };
+    private static readonly string[] separator = ["\r\n", "\n"];
 
     // Helper til at køre CLI'en via dotnet run
     private static int RunCli(string appArgs, string workDir, out string stdout, out string stderr, bool noBuild = true)
