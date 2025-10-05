@@ -1,0 +1,16 @@
+/Users/andersgrangaard/Chirp.CLI/test/SimpleDB.test/bin/Debug/net8.0/SimpleDB.test.deps.json
+/Users/andersgrangaard/Chirp.CLI/test/SimpleDB.test/bin/Debug/net8.0/SimpleDB.test.dll
+/Users/andersgrangaard/Chirp.CLI/test/SimpleDB.test/bin/Debug/net8.0/SimpleDB.test.pdb
+/Users/andersgrangaard/Chirp.CLI/test/SimpleDB.test/bin/Debug/net8.0/SimpleDB.dll
+/Users/andersgrangaard/Chirp.CLI/test/SimpleDB.test/bin/Debug/net8.0/SimpleDB.pdb
+/Users/andersgrangaard/Chirp.CLI/test/SimpleDB.test/obj/Debug/net8.0/SimpleDB.test.csproj.AssemblyReference.cache
+/Users/andersgrangaard/Chirp.CLI/test/SimpleDB.test/obj/Debug/net8.0/SimpleDB.test.GeneratedMSBuildEditorConfig.editorconfig
+/Users/andersgrangaard/Chirp.CLI/test/SimpleDB.test/obj/Debug/net8.0/SimpleDB.test.AssemblyInfoInputs.cache
+/Users/andersgrangaard/Chirp.CLI/test/SimpleDB.test/obj/Debug/net8.0/SimpleDB.test.AssemblyInfo.cs
+/Users/andersgrangaard/Chirp.CLI/test/SimpleDB.test/obj/Debug/net8.0/SimpleDB.test.csproj.CoreCompileInputs.cache
+/Users/andersgrangaard/Chirp.CLI/test/SimpleDB.test/obj/Debug/net8.0/SimpleDB.test.sourcelink.json
+/Users/andersgrangaard/Chirp.CLI/test/SimpleDB.test/obj/Debug/net8.0/SimpleDB.AFD461B2.Up2Date
+/Users/andersgrangaard/Chirp.CLI/test/SimpleDB.test/obj/Debug/net8.0/SimpleDB.test.dll
+/Users/andersgrangaard/Chirp.CLI/test/SimpleDB.test/obj/Debug/net8.0/refint/SimpleDB.test.dll
+/Users/andersgrangaard/Chirp.CLI/test/SimpleDB.test/obj/Debug/net8.0/SimpleDB.test.pdb
+/Users/andersgrangaard/Chirp.CLI/test/SimpleDB.test/obj/Debug/net8.0/ref/SimpleDB.test.dll

@@ -1,0 +1,50 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio Version 17
+VisualStudioVersion = 17.0.31903.59
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "src", "src", "{7C458302-5422-4AA3-8834-2911ECFEDA50}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "SimpleDB", "src\SimpleDB\SimpleDB.csproj", "{6532E2F0-B996-451A-B38B-80ECA9A83FE1}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Chirp.CLI.client", "src\Chirp.CLI.Client\Chirp.CLI.client.csproj", "{5C03AA15-CA1D-479C-8502-37CF02ED943E}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "test", "test", "{476F87CF-9165-46D8-909E-6FEC576CB254}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Chirp.Cli.Client.test", "test\Chirp.Cli.Client.test\Chirp.Cli.Client.test.csproj", "{266E7F17-96B1-44E9-A113-F2A1B1E64830}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "SimpleDB.test", "test\SimpleDB.test\SimpleDB.test.csproj", "{4B2304C5-861F-4F6D-AD23-6F363B251339}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{6532E2F0-B996-451A-B38B-80ECA9A83FE1}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{6532E2F0-B996-451A-B38B-80ECA9A83FE1}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{6532E2F0-B996-451A-B38B-80ECA9A83FE1}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{6532E2F0-B996-451A-B38B-80ECA9A83FE1}.Release|Any CPU.Build.0 = Release|Any CPU
+		{5C03AA15-CA1D-479C-8502-37CF02ED943E}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{5C03AA15-CA1D-479C-8502-37CF02ED943E}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{5C03AA15-CA1D-479C-8502-37CF02ED943E}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{5C03AA15-CA1D-479C-8502-37CF02ED943E}.Release|Any CPU.Build.0 = Release|Any CPU
+		{266E7F17-96B1-44E9-A113-F2A1B1E64830}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{266E7F17-96B1-44E9-A113-F2A1B1E64830}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{266E7F17-96B1-44E9-A113-F2A1B1E64830}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{266E7F17-96B1-44E9-A113-F2A1B1E64830}.Release|Any CPU.Build.0 = Release|Any CPU
+		{4B2304C5-861F-4F6D-AD23-6F363B251339}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{4B2304C5-861F-4F6D-AD23-6F363B251339}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{4B2304C5-861F-4F6D-AD23-6F363B251339}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{4B2304C5-861F-4F6D-AD23-6F363B251339}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(NestedProjects) = preSolution
+		{6532E2F0-B996-451A-B38B-80ECA9A83FE1} = {7C458302-5422-4AA3-8834-2911ECFEDA50}
+		{5C03AA15-CA1D-479C-8502-37CF02ED943E} = {7C458302-5422-4AA3-8834-2911ECFEDA50}
+		{266E7F17-96B1-44E9-A113-F2A1B1E64830} = {476F87CF-9165-46D8-909E-6FEC576CB254}
+		{4B2304C5-861F-4F6D-AD23-6F363B251339} = {476F87CF-9165-46D8-909E-6FEC576CB254}
+	EndGlobalSection
+EndGlobal

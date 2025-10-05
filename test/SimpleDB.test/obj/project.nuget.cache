@@ -1,0 +1,18 @@
+{
+  "version": 2,
+  "dgSpecHash": "RXBoCSVJiI0=",
+  "success": true,
+  "projectFilePath": "/Users/andersgrangaard/Chirp.CLI/test/SimpleDB.test/SimpleDB.test.csproj",
+  "expectedPackageFiles": [
+    "/Users/andersgrangaard/.nuget/packages/csvhelper/33.1.0/csvhelper.33.1.0.nupkg.sha512",
+    "/Users/andersgrangaard/.nuget/packages/fluentassertions/8.7.1/fluentassertions.8.7.1.nupkg.sha512",
+    "/Users/andersgrangaard/.nuget/packages/xunit/2.9.3/xunit.2.9.3.nupkg.sha512",
+    "/Users/andersgrangaard/.nuget/packages/xunit.abstractions/2.0.3/xunit.abstractions.2.0.3.nupkg.sha512",
+    "/Users/andersgrangaard/.nuget/packages/xunit.analyzers/1.18.0/xunit.analyzers.1.18.0.nupkg.sha512",
+    "/Users/andersgrangaard/.nuget/packages/xunit.assert/2.9.3/xunit.assert.2.9.3.nupkg.sha512",
+    "/Users/andersgrangaard/.nuget/packages/xunit.core/2.9.3/xunit.core.2.9.3.nupkg.sha512",
+    "/Users/andersgrangaard/.nuget/packages/xunit.extensibility.core/2.9.3/xunit.extensibility.core.2.9.3.nupkg.sha512",
+    "/Users/andersgrangaard/.nuget/packages/xunit.extensibility.execution/2.9.3/xunit.extensibility.execution.2.9.3.nupkg.sha512"
+  ],
+  "logs": []
+}

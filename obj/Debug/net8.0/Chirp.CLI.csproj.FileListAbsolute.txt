@@ -13,3 +13,4 @@
 /Users/andersgrangaard/Chirp.CLI/obj/Debug/net8.0/Chirp.CLI.genruntimeconfig.cache
 /Users/andersgrangaard/Chirp.CLI/obj/Debug/net8.0/ref/Chirp.CLI.dll
 /Users/andersgrangaard/Chirp.CLI/obj/Debug/net8.0/Chirp.CLI.sourcelink.json
+/Users/andersgrangaard/Chirp.CLI/obj/Debug/net8.0/Chirp.CLI.csproj.AssemblyReference.cache
