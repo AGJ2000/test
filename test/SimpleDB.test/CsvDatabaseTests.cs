@@ -19,7 +19,7 @@ public class CsvDatabaseTests
         var tmp = Path.Combine(Path.GetTempPath(), Guid.NewGuid() + ".csv");
         try
         {
-            var db = CSVDatabase<Cheep>.Instance(tmp); // singleton i 2.b
+            var db = new CSVDatabase<Cheep>(tmp); // singleton i 2.b
             var c = new Cheep("tester", "hello", DateTimeOffset.UtcNow.ToUnixTimeSeconds());
             db.Store(c);
 

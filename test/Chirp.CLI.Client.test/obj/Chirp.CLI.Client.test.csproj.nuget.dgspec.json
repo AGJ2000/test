@@ -1,15 +1,15 @@
 {
   "format": 1,
   "restore": {
-    "/Users/andersgrangaard/Chirp.CLI/test/Chirp.CLI.Client.test/Chirp.CLI.Client.test.csproj": {}
+    "/Users/andersgrangaard/Chirp.CLI/test/Chirp.Cli.Client.test/Chirp.Cli.Client.test.csproj": {}
   },
   "projects": {
-    "/Users/andersgrangaard/Chirp.CLI/src/Chirp.CLI.Client/Chirp.CLI.Client.csproj": {
+    "/Users/andersgrangaard/Chirp.CLI/src/Chirp.CLI.Client/Chirp.CLI.client.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "/Users/andersgrangaard/Chirp.CLI/src/Chirp.CLI.Client/Chirp.CLI.Client.csproj",
-        "projectName": "Chirp.CLI.Client",
-        "projectPath": "/Users/andersgrangaard/Chirp.CLI/src/Chirp.CLI.Client/Chirp.CLI.Client.csproj",
+        "projectUniqueName": "/Users/andersgrangaard/Chirp.CLI/src/Chirp.CLI.Client/Chirp.CLI.client.csproj",
+        "projectName": "Chirp.CLI.client",
+        "projectPath": "/Users/andersgrangaard/Chirp.CLI/src/Chirp.CLI.Client/Chirp.CLI.client.csproj",
         "packagesPath": "/Users/andersgrangaard/.nuget/packages/",
         "outputPath": "/Users/andersgrangaard/Chirp.CLI/src/Chirp.CLI.Client/obj/",
         "projectStyle": "PackageReference",
@@ -140,14 +140,14 @@
         }
       }
     },
-    "/Users/andersgrangaard/Chirp.CLI/test/Chirp.CLI.Client.test/Chirp.CLI.Client.test.csproj": {
+    "/Users/andersgrangaard/Chirp.CLI/test/Chirp.Cli.Client.test/Chirp.Cli.Client.test.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "/Users/andersgrangaard/Chirp.CLI/test/Chirp.CLI.Client.test/Chirp.CLI.Client.test.csproj",
-        "projectName": "Chirp.CLI.Client.test",
-        "projectPath": "/Users/andersgrangaard/Chirp.CLI/test/Chirp.CLI.Client.test/Chirp.CLI.Client.test.csproj",
+        "projectUniqueName": "/Users/andersgrangaard/Chirp.CLI/test/Chirp.Cli.Client.test/Chirp.Cli.Client.test.csproj",
+        "projectName": "Chirp.Cli.Client.test",
+        "projectPath": "/Users/andersgrangaard/Chirp.CLI/test/Chirp.Cli.Client.test/Chirp.Cli.Client.test.csproj",
         "packagesPath": "/Users/andersgrangaard/.nuget/packages/",
-        "outputPath": "/Users/andersgrangaard/Chirp.CLI/test/Chirp.CLI.Client.test/obj/",
+        "outputPath": "/Users/andersgrangaard/Chirp.CLI/test/Chirp.Cli.Client.test/obj/",
         "projectStyle": "PackageReference",
         "configFilePaths": [
           "/Users/andersgrangaard/.nuget/NuGet/NuGet.Config"
@@ -162,8 +162,8 @@
           "net8.0": {
             "targetAlias": "net8.0",
             "projectReferences": {
-              "/Users/andersgrangaard/Chirp.CLI/src/Chirp.CLI.Client/Chirp.CLI.Client.csproj": {
-                "projectPath": "/Users/andersgrangaard/Chirp.CLI/src/Chirp.CLI.Client/Chirp.CLI.Client.csproj"
+              "/Users/andersgrangaard/Chirp.CLI/src/Chirp.CLI.Client/Chirp.CLI.client.csproj": {
+                "projectPath": "/Users/andersgrangaard/Chirp.CLI/src/Chirp.CLI.Client/Chirp.CLI.client.csproj"
               }
             }
           }
@@ -187,9 +187,19 @@
               "target": "Package",
               "version": "[8.7.1, )"
             },
+            "Microsoft.NET.Test.Sdk": {
+              "target": "Package",
+              "version": "[17.11.1, )"
+            },
             "xunit": {
               "target": "Package",
               "version": "[2.9.3, )"
+            },
+            "xunit.runner.visualstudio": {
+              "include": "Runtime, Build, Native, ContentFiles, Analyzers, BuildTransitive",
+              "suppressParent": "All",
+              "target": "Package",
+              "version": "[2.8.2, )"
             }
           },
           "imports": [
