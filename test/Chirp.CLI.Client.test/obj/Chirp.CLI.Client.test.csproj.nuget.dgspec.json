@@ -4,12 +4,12 @@
     "/Users/andersgrangaard/Chirp.CLI/test/Chirp.Cli.Client.test/Chirp.Cli.Client.test.csproj": {}
   },
   "projects": {
-    "/Users/andersgrangaard/Chirp.CLI/src/Chirp.CLI.Client/Chirp.CLI.client.csproj": {
+    "/Users/andersgrangaard/Chirp.CLI/src/Chirp.CLI.Client/Chirp.CLI.Client.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "/Users/andersgrangaard/Chirp.CLI/src/Chirp.CLI.Client/Chirp.CLI.client.csproj",
-        "projectName": "Chirp.CLI.client",
-        "projectPath": "/Users/andersgrangaard/Chirp.CLI/src/Chirp.CLI.Client/Chirp.CLI.client.csproj",
+        "projectUniqueName": "/Users/andersgrangaard/Chirp.CLI/src/Chirp.CLI.Client/Chirp.CLI.Client.csproj",
+        "projectName": "Chirp.CLI.Client",
+        "projectPath": "/Users/andersgrangaard/Chirp.CLI/src/Chirp.CLI.Client/Chirp.CLI.Client.csproj",
         "packagesPath": "/Users/andersgrangaard/.nuget/packages/",
         "outputPath": "/Users/andersgrangaard/Chirp.CLI/src/Chirp.CLI.Client/obj/",
         "projectStyle": "PackageReference",
@@ -162,8 +162,8 @@
           "net8.0": {
             "targetAlias": "net8.0",
             "projectReferences": {
-              "/Users/andersgrangaard/Chirp.CLI/src/Chirp.CLI.Client/Chirp.CLI.client.csproj": {
-                "projectPath": "/Users/andersgrangaard/Chirp.CLI/src/Chirp.CLI.Client/Chirp.CLI.client.csproj"
+              "/Users/andersgrangaard/Chirp.CLI/src/Chirp.CLI.Client/Chirp.CLI.Client.csproj": {
+                "projectPath": "/Users/andersgrangaard/Chirp.CLI/src/Chirp.CLI.Client/Chirp.CLI.Client.csproj"
               }
             }
           }
