@@ -10,7 +10,6 @@ public interface IDatabaseRepository<T>
     IEnumerable<T> Read(int? limit = null);
     void Store(T record);
 }
-
 public sealed class CSVDatabase<T> : IDatabaseRepository<T>
 {
     private readonly string _filePath;
@@ -24,7 +23,6 @@ public sealed class CSVDatabase<T> : IDatabaseRepository<T>
             HasHeaderRecord = true,
         };
     }
-
     public IEnumerable<T> Read(int? limit = null)
     {
         if (!File.Exists(_filePath))
@@ -45,7 +43,6 @@ public sealed class CSVDatabase<T> : IDatabaseRepository<T>
             return records.ToList();
         }
     }
-
     public void Store(T record)
     {
         bool fileExists = File.Exists(_filePath);
@@ -62,5 +59,4 @@ public sealed class CSVDatabase<T> : IDatabaseRepository<T>
         csv.WriteRecord(record);
         csv.NextRecord();
     }
-
 }
