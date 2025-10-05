@@ -1,5 +1,7 @@
 using System;
+
 using FluentAssertions;
+
 using Xunit;
 namespace Chirp.CLI.Client.test;
 public class TimeFormattingTests
