@@ -1,8 +1,6 @@
 using System;
 using System.Collections.Generic;
-
 namespace Chirp.CLI.Client;
-
 public static class UserInterface
 {
     private static readonly string DisplayFormat = "MM/dd/yy HH:mm:ss";

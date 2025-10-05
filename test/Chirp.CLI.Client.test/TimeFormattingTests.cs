@@ -1,9 +1,6 @@
 using System;
-
 using FluentAssertions;
-
 using Xunit;
-
 public class TimeFormattingTests
 {
     [Theory]

@@ -2,9 +2,7 @@ using System;
 using System.Diagnostics;
 using System.IO;
 using System.Linq;
-
 using Xunit;
-
 public sealed class End2End
 {
     // Brug samme build-config som CI. Lokalt falder den tilbage til Debug.
